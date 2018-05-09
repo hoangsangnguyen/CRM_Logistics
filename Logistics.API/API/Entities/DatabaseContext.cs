@@ -50,6 +50,9 @@ namespace API.Entities
             modelBuilder.Entity<Department>()
                 .HasIndex(u => u._key)
                 .IsUnique();
+            modelBuilder.Entity<Contact>()
+               .HasIndex(u => u.contactID)
+               .IsUnique();
         }
 
      

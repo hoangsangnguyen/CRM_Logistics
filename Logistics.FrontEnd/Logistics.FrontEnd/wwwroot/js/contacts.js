@@ -1,12 +1,12 @@
 ﻿$(document).ready(function () {
-    console.log("Hello Mr Sangg");
+    console.log("welcome to contact.js");
     LoadDataGrid();
 })
 
 function LoadDataGrid() {
     console.log('Enter loading data grid');
     $.ajax({
-        url: "https://localhost:44395/airexps",
+        url: "https://localhost:44395/contacts",
         type: "GET",
         dataType: "json",
         contentType: 'application/json',

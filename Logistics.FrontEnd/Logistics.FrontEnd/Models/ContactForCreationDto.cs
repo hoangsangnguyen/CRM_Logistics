@@ -11,6 +11,10 @@ namespace Logistics.FrontEnd.Models
     {
         [Required]
         [MaxLength(50)]
+        public string contactID { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string firstName { get; set; }
 
         [Required]
