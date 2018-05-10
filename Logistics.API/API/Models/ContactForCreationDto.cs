@@ -26,23 +26,17 @@ namespace API.Models
 
         public Guid positionID { get; set; }
 
-        [Required]
         public string homeAddress { get; set; }
 
-        [Required]
         public string cellPhone { get; set; }
 
-        [Required]
         public string homePhone { get; set; }
 
-        [Required]
         [DataType(DataType.EmailAddress)]
         public string email { get; set; }
 
-        [Required]
         public string company_ext { get; set; }
 
-        [Required]
         public string signature { get; set; }
 
         public string departmentID { get; set; }
@@ -52,18 +46,14 @@ namespace API.Models
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime birthday { get; set; }
 
-        [Required]
         public bool marriageStatus { get; set; }
 
-        [Required]
         public string spouseName { get; set; }
 
-        [Required]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
         public DateTime spouseBirthday { get; set; }
 
-        [Required]
         public string fieldInterested { get; set; }
     }
 }

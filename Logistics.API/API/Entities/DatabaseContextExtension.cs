@@ -312,7 +312,113 @@ namespace API.Entities
                 };
                 context.Payments.AddRange(payments);
             }
-
+            if (context.Positions.Count() == 0)
+            {
+                var positions = new List<Position>
+                {
+                    new Position
+                    {
+                        Id = Guid.NewGuid(),
+                        name = "Director"
+                    },
+                    new Position
+                    {
+                        Id = Guid.NewGuid(),
+                        name = "Operation Executive"
+                    },
+                    new Position
+                    {
+                        Id = Guid.NewGuid(),
+                        name = "Account Manager"
+                    },
+                    new Position
+                    {
+                        Id = Guid.NewGuid(),
+                        name = "Accountant"
+                    },
+                    new Position
+                    {
+                        Id = Guid.NewGuid(),
+                        name = "General Director"
+                    },
+                    new Position
+                    {
+                        Id = Guid.NewGuid(),
+                        name = "Oversea Manager"
+                    },
+                    new Position
+                    {
+                        Id = Guid.NewGuid(),
+                        name = "Staff"
+                    },
+                    new Position
+                    {
+                        Id = Guid.NewGuid(),
+                        name = "FLC"
+                    },
+                    new Position
+                    {
+                        Id = Guid.NewGuid(),
+                        name = "Nomination"
+                    }
+                };
+                context.Positions.AddRange(positions);
+            }
+            if (context.Departments.Count() == 0)
+            {
+                var departments = new List<Department>
+                {
+                    new Department
+                    {
+                        Id = Guid.NewGuid(),
+                        _key = "DP001",
+                        name = "BOD"
+                    },
+                      new Department
+                    {
+                        Id = Guid.NewGuid(),
+                        _key = "DP002",
+                        name = "Sales"
+                    },
+                      new Department
+                    {
+                        Id = Guid.NewGuid(),
+                        _key = "DP003",
+                        name = "Accounting"
+                    },
+                      new Department
+                    {
+                        Id = Guid.NewGuid(),
+                        _key = "DP004",
+                        name = "Operation"
+                    },
+                      new Department
+                    {
+                        Id = Guid.NewGuid(),
+                        _key = "DP005",
+                        name = "Oversea"
+                    },
+                      new Department
+                    {
+                        Id = Guid.NewGuid(),
+                        _key = "DP006",
+                        name = "HAN Office"
+                    },
+                      new Department
+                    {
+                        Id = Guid.NewGuid(),
+                        _key = "DP007",
+                        name = "FLC"
+                    },
+                      new Department
+                    {
+                        Id = Guid.NewGuid(),
+                        _key = "DP008",
+                        name = "Nomination"
+                    }
+                };
+                context.Departments.AddRange(departments);
+            }
             context.SaveChanges();
         }
     }

@@ -109,6 +109,8 @@ namespace API
             services.AddTransient<IContactRepository, ContactRepository>();
             services.AddTransient<IPortRepository, PortRepository>();
             services.AddTransient<ICarrierRepository, CarrierRepository>();
+            services.AddTransient<IPositionRepository, PositionRepository>();
+            services.AddTransient<IDepartmentRepository, DepartmentRepository>();
 
 
             services.AddTransient<IUserRepository, UserRepository>();

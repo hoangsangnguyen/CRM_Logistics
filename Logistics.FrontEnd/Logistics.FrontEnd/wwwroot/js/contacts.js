@@ -4,7 +4,7 @@
 })
 
 function LoadDataGrid() {
-    console.log('Enter loading data grid');
+    console.log('Enter loading data gridd');
     $.ajax({
         url: "https://localhost:44395/contacts",
         type: "GET",
@@ -18,19 +18,15 @@ function LoadDataGrid() {
                 $('#example').DataTable();
                 return;
             }
-
             $('#example').DataTable({
                 destroy: true,
                 data: dataJS.data,
                 "columns": [
-                    { "data": "jobID" },
-                    { "data": "etd" },
-                    { "data": "service" },
-                    { "data": "etd" },
-                    { "data": "eta" },
-                    { "data": "commodityId" },
-                    { "data": "quantity" },
-                    { "data": "commodityId" }
+                    { "data": "contactID" },
+                    { "data": "firstName" },
+                    { "data": "englishName" },
+                    { "data": "position.name" },
+                    { "data": "department.name" }
                 ]
             });
 
