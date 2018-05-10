@@ -1,9 +1,15 @@
 ﻿$(document).ready(function () {
     console.log("Hello Mr Sang");
     LoadCommodity();
-    //document.getElementById('save').addEventListener("click", function () {
-    //    CreateNewCommodity();
-    //});
+    LoadContacts();
+    LoadShipments();
+    LoadTypeOfBills();
+    LoadUnits();
+    LoadPayments();
+
+    document.getElementById('save').addEventListener("click", function () {
+        CreateNewCommodity();
+    });
 })
 
 function CreateNewCommodity() {
@@ -42,12 +48,131 @@ function LoadCommodity() {
         cache: false,
         async: false,
         success: function (dataJS) {
-            console.log(dataJS);
+            console.log('Load Commodities succeed');
             var datas = dataJS.data;
 
             $.each(datas, function (i, item) {
-                console.log(item);
                 $('#Commodity').append($('<option>', {
+                    value: item.id,
+                    text: item.name
+                }));
+            });
+
+        }
+    });
+}
+
+function LoadContacts() {
+    console.log('Enter loading contacts');
+    $.ajax({
+        url: "https://localhost:44395/contacts",
+        type: "GET",
+        dataType: "json",
+        contentType: 'application/json',
+        cache: false,
+        async: false,
+        success: function (dataJS) {
+            console.log('Load Commodities succeed');
+            var datas = dataJS.data;
+
+            $.each(datas, function (i, item) {
+                $('#opic').append($('<option>', {
+                    value: item.id,
+                    text: item.firstName + ' ' + item.lastName
+                }));
+            });
+
+        }
+    });
+}
+
+function LoadShipments() {
+    console.log('Enter loading commodity');
+    $.ajax({
+        url: "https://localhost:44395/shipments",
+        type: "GET",
+        dataType: "json",
+        contentType: 'application/json',
+        cache: false,
+        async: false,
+        success: function (dataJS) {
+            console.log('Load shipments succeed');
+            var datas = dataJS.data;
+
+            $.each(datas, function (i, item) {
+                $('#Shipment').append($('<option>', {
+                    value: item.id,
+                    text: item.name
+                }));
+            });
+
+        }
+    });
+}
+
+function LoadTypeOfBills() {
+    console.log('Enter loading typeofbills');
+    $.ajax({
+        url: "https://localhost:44395/typeofbills",
+        type: "GET",
+        dataType: "json",
+        contentType: 'application/json',
+        cache: false,
+        async: false,
+        success: function (dataJS) {
+            console.log('Load types of bill succeed');
+            var datas = dataJS.data;
+
+            $.each(datas, function (i, item) {
+                $('#billtype').append($('<option>', {
+                    value: item.id,
+                    text: item.name
+                }));
+            });
+
+        }
+    });
+}
+
+function LoadUnits() {
+    console.log('Enter loading units');
+    $.ajax({
+        url: "https://localhost:44395/units",
+        type: "GET",
+        dataType: "json",
+        contentType: 'application/json',
+        cache: false,
+        async: false,
+        success: function (dataJS) {
+            console.log('Load units succeed');
+            var datas = dataJS.data;
+
+            $.each(datas, function (i, item) {
+                $('#Unit').append($('<option>', {
+                    value: item.id,
+                    text: item.name
+                }));
+            });
+
+        }
+    });
+}
+
+function LoadPayments() {
+    console.log('Enter loading payments');
+    $.ajax({
+        url: "https://localhost:44395/payments",
+        type: "GET",
+        dataType: "json",
+        contentType: 'application/json',
+        cache: false,
+        async: false,
+        success: function (dataJS) {
+            console.log('Load payments succeed');
+            var datas = dataJS.data;
+
+            $.each(datas, function (i, item) {
+                $('#Payment').append($('<option>', {
                     value: item.id,
                     text: item.name
                 }));

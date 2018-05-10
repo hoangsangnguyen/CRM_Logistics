@@ -61,6 +61,7 @@ namespace API.Models
         public Nullable<Guid> unitID { get; set; } = null;
 
         public Nullable<Guid> paymentID { get; set; } = null;
+        public bool isFinish { get; set; }
 
         public Nullable<Guid> carrierID { get; set; } = null;
 
@@ -72,5 +73,7 @@ namespace API.Models
         //public virtual Port destination { get; set; }
         //[Required]
         //public string destinationID { get; set; }
+        public string notes { get; set; }
+
     }
 }

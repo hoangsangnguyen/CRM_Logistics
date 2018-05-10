@@ -63,6 +63,8 @@ namespace Logistics.FrontEnd.Models
 
         public Nullable<Guid> paymentID { get; set; } = null;
 
+        public bool isFinish { get; set; }
+
         public Nullable<Guid> carrierID { get; set; } = null;
 
         //public virtual Carrier agent { get; set; }
@@ -73,5 +75,7 @@ namespace Logistics.FrontEnd.Models
         //public virtual Port destination { get; set; }
         //[Required]
         //public string destinationID { get; set; }
+        public string notes { get; set; }
+
     }
 }

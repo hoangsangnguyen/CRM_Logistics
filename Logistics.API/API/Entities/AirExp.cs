@@ -77,6 +77,9 @@ namespace API.Entities
         public virtual Payment payment { get; set; }
         public Nullable<Guid> paymentID { get; set; } = null;
 
+        [Required]
+        public bool isFinish { get; set; }
+
         [ForeignKey("carrierID")]
         public virtual Carrier carrier { get; set; }
         public Nullable<Guid> carrierID { get; set; } = null;
@@ -89,5 +92,9 @@ namespace API.Entities
         //public virtual Port destination { get; set; }
         //[Required]
         //public string destinationID { get; set; }
+
+        [Required]
+        public string notes { get; set; }
+
     }
 }

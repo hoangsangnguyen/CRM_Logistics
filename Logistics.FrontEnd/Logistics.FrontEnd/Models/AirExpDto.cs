@@ -53,6 +53,8 @@ namespace Logistics.FrontEnd.Models
         public virtual ShipmentDto shipment { get; set; }
         public Nullable<Guid> shipmentID { get; set; } = null;
 
+        public bool isFinish { get; set; }
+
         //[ForeignKey("originPortID")]
         //public virtual Port originPort { get; set; }
         //[Required]
@@ -83,5 +85,7 @@ namespace Logistics.FrontEnd.Models
         //public virtual Port destination { get; set; }
         //[Required]
         //public string destinationID { get; set; }
+        public string notes { get; set; }
+
     }
 }

@@ -72,6 +72,8 @@ namespace API.Models
         public virtual PaymentDto payment { get; set; }
         public Nullable<Guid> paymentID { get; set; } = null;
 
+        public bool isFinish { get; set; }
+
         public virtual CarrierDto carrier { get; set; }
         public Nullable<Guid> carrierID { get; set; } = null;
 
@@ -83,5 +85,7 @@ namespace API.Models
         //public virtual Port destination { get; set; }
         //[Required]
         //public string destinationID { get; set; }
+        public string notes { get; set; }
+
     }
 }

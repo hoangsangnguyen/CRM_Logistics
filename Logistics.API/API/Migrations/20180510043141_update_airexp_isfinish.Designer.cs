@@ -8,9 +8,10 @@ using API.Entities;
 namespace API.Migrations
 {
     [DbContext(typeof(DatabaseContext))]
-    partial class DatabaseContextModelSnapshot : ModelSnapshot
+    [Migration("20180510043141_update_airexp_isfinish")]
+    partial class update_airexp_isfinish
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.5")
@@ -59,9 +60,6 @@ namespace API.Migrations
                     b.Property<bool>("isFinish");
 
                     b.Property<string>("mawbNumber");
-
-                    b.Property<string>("notes")
-                        .IsRequired();
 
                     b.Property<Guid?>("opicID");
 
