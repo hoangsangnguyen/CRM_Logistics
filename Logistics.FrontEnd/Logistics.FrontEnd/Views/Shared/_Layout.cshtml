@@ -33,6 +33,7 @@
     <link href="~/css/iconmoon.css" rel="stylesheet">
     <link href="~/css/rwd.css" rel="stylesheet">
     <link href="~/css/print.css" rel="stylesheet">
+    <link href="https://editor.datatables.net/extensions/Editor/css/editor.dataTables.min.css" rel="stylesheet" />
 </head>
 <body>
     <div>
@@ -92,6 +93,8 @@
     <link href="~/plugins/chosen/chosen.css" rel="stylesheet" type="text/css" />
     <script src="~/plugins/chosen/chosen.jquery.js"></script>
 
+    <script src="~/js/kendo/2014.1.528/kendo.all.min.js"></script>
+
     @*<script src="~/js/all/jquery.common.js"></script>*@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.1.0/jquery.serialize-object.min.js"></script>
 
@@ -109,7 +112,11 @@
         // Show hiden pass click
         //$("#password").password('toggle');
         // Date Picker
-        jQuery('.mydatepicker, #datepicker').datepicker();
+        jQuery('.mydatepicker, #datepicker').datepicker({
+            autoclose: true,
+            todayHighlight: false,
+        });
+
         jQuery('#datepicker-autoclose').datepicker({
             autoclose: true,
             todayHighlight: true

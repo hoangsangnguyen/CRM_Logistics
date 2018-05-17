@@ -11,6 +11,8 @@
     <link href="~/css/iconmoon.css" rel="stylesheet">
     <link href="~/css/rwd.css" rel="stylesheet">
     <link href="~/css/print.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css" rel="stylesheet" />
+
 </header>
 
 <main class="out-main">
@@ -25,7 +27,9 @@
 <div class="col-sm-12 col-md-12 col-lg-12">
     <div class="out-input">
         <label style="display: block">&nbsp;</label>
-        <a href="airexps/create" class="btn pull-right"><i class="mdi mdi-plus-circle-outline"></i>&nbsp;Add</a>
+        <button id="btn_add" onclick="window.location.href='airexps/AddEdit'" class="btn pull-right"><i class="mdi mdi-plus-circle-outline"></i>&nbsp;Add</button>
+        <button id="btn_update" class="btn pull-right" disabled ><i class="mdi mdi-update"></i>&nbsp;Update</button>
+        <button id="btn_delete" class="btn pull-right" disabled><i class="mdi mdi-delete"></i>&nbsp;Delete</button>
     </div>
 </div>
 

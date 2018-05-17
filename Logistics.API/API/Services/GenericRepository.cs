@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 namespace API.Services
 {
     public class GenericRepository<TEntity, TDto , TCreationDto> : IGenericRepository<TEntity, TDto, TCreationDto> 
-        where TDto : class where TCreationDto : class where TEntity:BaseEntity
+        where TDto : BaseDto where TCreationDto : class where TEntity:BaseEntity
     {
         private readonly DatabaseContext _context;
         private DbSet<TEntity> _entities;
@@ -25,7 +25,8 @@ namespace API.Services
         {
             _context = context;
             _entities = _context.Set<TEntity>();
-            var config = new MapperConfiguration(cfg => {
+            var config = new MapperConfiguration(cfg =>
+            {
                 cfg.CreateMap<TEntity, TDto>();
             });
 
@@ -34,12 +35,22 @@ namespace API.Services
 
         public async Task<TDto> GetSingleAsync(Guid id)
         {
-            var entity = await _entities.SingleOrDefaultAsync(r => r.Id == id);
+            //var entity = await _entities.FirstOrDefaultAsync(r => r.Id == id);
+            
+            IQueryable<TEntity> query = _entities;
+            var totalSize = await query.CountAsync();
+
+            var items = await query
+                .ProjectTo<TDto>()
+                .ToArrayAsync();
+
+            var entity = items.FirstOrDefault(x => x.Id == id);
+
             if (entity == null)
             {
                 throw new InvalidOperationException("Can not find object with this Id.");
             }
-            return _mapper.Map<TDto>(entity);      
+            return Mapper.Map<TDto>(entity);      
         }
 
         public async Task<PagedResults<TDto>> GetListAsync(int offset, int limit, string keyword, 

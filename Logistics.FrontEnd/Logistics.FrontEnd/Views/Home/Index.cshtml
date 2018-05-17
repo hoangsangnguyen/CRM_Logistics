@@ -1402,10 +1402,14 @@
         // Show hiden pass click
         //$("#password").password('toggle');
         // Date Picker
-        jQuery('.mydatepicker, #datepicker').datepicker();
+        jQuery('.mydatepicker, #datepicker').datepicker({
+            autoclose: true,
+            todayHighlight: false
+        });
+
         jQuery('#datepicker-autoclose').datepicker({
             autoclose: true,
-            todayHighlight: true
+            todayHighlight: false
         });
 
         jQuery('#date-range').datepicker({
@@ -1413,7 +1417,7 @@
         });
         jQuery('#datepicker-inline').datepicker({
 
-            todayHighlight: true
+            todayHighlight: false
         });
 
         // plugins chosen //////////

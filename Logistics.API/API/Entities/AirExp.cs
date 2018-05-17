@@ -13,20 +13,19 @@ namespace API.Entities
         public string JobID { get; set; }
 
         [Required]
-        [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "MM/dd/yyyy", ApplyFormatInEditMode = true)]
         public DateTime created { get; set; }
 
         public string service { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{MM/dd/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime etd { get; set; }
 
         [Required]
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "MM/dd/yyyy", ApplyFormatInEditMode = true)]
         public DateTime eta { get; set; }
 
         [ForeignKey("commodityId")]
@@ -44,7 +43,7 @@ namespace API.Entities
         public string flightNumber { get; set; }
 
         [DataType(DataType.Date)]
-        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [DisplayFormat(DataFormatString = "{MM/dd/yyyy}", ApplyFormatInEditMode = true)]
         public DateTime flyDate { get; set; }
 
         [ForeignKey("opicID")]

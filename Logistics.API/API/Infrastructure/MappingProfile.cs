@@ -15,7 +15,7 @@ namespace API.Infrastructure
             CreateMap<Commodity, CommodityDto>();
             CreateMap<CommodityDto, Commodity>();
 
-            CreateMap<AirExp, AirExpDto>() ;
+            CreateMap<AirExp, AirExpDto>();
             CreateMap<AirExpForCreationDto, AirExp>()
                 .ForMember(dest => dest.Commodity, opt => opt.Ignore())
                 .ForMember(dest => dest.TypeOfBill, opt => opt.Ignore())
@@ -73,7 +73,6 @@ namespace API.Infrastructure
               .ForMember(dest => dest.country, opt => opt.Ignore())
               ;
 
-            CreateMap<Commodity, CommodityDto>();
             CreateMap<Contact, ContactDto>();
             CreateMap<ContactForCreationDto, Contact>()
                 .ForMember(dest => dest.department, opt => opt.Ignore())

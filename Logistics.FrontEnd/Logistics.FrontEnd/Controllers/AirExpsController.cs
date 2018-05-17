@@ -4,11 +4,17 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Logistics.FrontEnd.Models;
+using System.Net.Http;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
 
 namespace Logistics.FrontEnd.Controllers
 {
     public class AirExpsController : Controller
     {
+        static HttpClient client = new HttpClient();
+
         // GET: AirExps
         public ActionResult Index()
         {
@@ -22,9 +28,34 @@ namespace Logistics.FrontEnd.Controllers
         }
 
         // GET: AirExps/Create
-        public ActionResult Create()
+        public async Task<ActionResult> AddEdit(Guid id )
         {
-            return View();
+            AirExpDto model;
+
+            if(id == Guid.Empty)
+            {
+                model = new Models.AirExpDto();
+            } else
+            {
+                string url = "https://localhost:44395/airexps/" + id;
+                AirExpDto airExp =  await GetAirExpsAsync(url);
+                model = airExp;
+            }
+            return View(model);
+        }
+
+        static async Task<AirExpDto> GetAirExpsAsync(string path)
+        {
+            string airExpStr = null;
+            HttpResponseMessage response = await client.GetAsync(path);
+            if (response.IsSuccessStatusCode)
+            {
+                airExpStr = await response.Content.ReadAsStringAsync();
+            }
+            AirExpDto airExp = JsonConvert.DeserializeObject<AirExpDto>(airExpStr);
+            Console.WriteLine(airExp);
+
+            return airExp;
         }
 
         // POST: AirExp/Create

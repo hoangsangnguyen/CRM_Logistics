@@ -1,5 +1,5 @@
 ﻿$(document).ready(function () {
-    console.log("Hello Mr Sang");
+    console.log("Hello Mr Sangg");
     LoadCommodity();
     LoadContacts();
     LoadShipments();
@@ -8,9 +8,33 @@
     LoadPayments();
 
     document.getElementById('save').addEventListener("click", function () {
-        CreateNewCommodity();
+        SaveAirExp();
     });
 })
+
+function SaveAirExp() {
+    var model = $('#form_new').serializeObject();
+    var checked = $('#checkbox1').is(":checked");
+
+    model.isFinish = checked;
+    var request = JSON.stringify(model);
+
+    console.log('model : ' + request);
+
+    $.ajax({
+        url: "https://localhost:44395/airexps",
+        type: "POST",
+        dataType: "json",
+        contentType: 'application/json',
+        data: request,
+        cache: false,
+        async: false,
+        success: function (dataJS) {
+            console.log(dataJS);
+            window.location.replace("http://localhost:53723/airexps");
+        }
+    });
+}
 
 function CreateNewCommodity() {
     var txt;
