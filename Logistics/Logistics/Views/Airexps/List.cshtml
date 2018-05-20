@@ -1,0 +1,67 @@
+﻿@using Logistics.Entities
+@using Microsoft.EntityFrameworkCore
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<header>
+    <link href="~/css/all/bootstrap.css" rel="stylesheet">
+    <link href="~/css/all/normalize.css" rel="stylesheet">
+    <link href="~/css/all/animate.css" rel="stylesheet">
+    <link href="~/css/style-ll.css" rel="stylesheet">
+    <link href="~/css/iconmoon.css" rel="stylesheet">
+    <link href="~/css/rwd.css" rel="stylesheet">
+    <link href="~/css/print.css" rel="stylesheet">
+    <link href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css" rel="stylesheet" />
+
+</header>
+
+<main class="out-main">
+    <section class="out-bar-top">
+        <i class="mdi mdi-truck-fast"></i>
+        <ul class="out-bar-line">
+            <li><a href="#" title="">Exports</a></li>
+            <li><a href="#" title="">Air Export</a></li>
+        </ul>
+    </section>
+</main>
+<div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="out-input">
+        <label style="display: block">&nbsp;</label>
+        <button id="btn_add" onclick="window.location.replace('@Url.Action("Create", "Airexps", null)')" class="btn pull-right"><i class="mdi mdi-plus-circle-outline"></i>&nbsp;Add</button>
+        <button id="btn_update" class="btn pull-right" disabled><i class="mdi mdi-update"></i>&nbsp;Update</button>
+        <button id="btn_delete" class="btn pull-right" disabled><i class="mdi mdi-delete"></i>&nbsp;Delete</button>
+    </div>
+</div>
+
+<div class="out-content-mid-table">
+    <div class="container-fluid">
+        <div class="row">
+            <section class="col-sm-12 col-md-12 col-lg-12">
+                <table id="example" class="display nowrap" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Job ID</th>
+                            <th>ETD</th>
+                            <th>Carrier</th>
+                            <th>Agent</th>
+                            <th>Routing</th>
+                            <th>Quantity</th>
+                            <th>GW</th>
+                            <th>Cg</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                </table>
+
+            </section>
+        </div>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <script src="~/js/main/airexps_list.js"></script>
+}
+

@@ -1,0 +1,1440 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=en">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Lee Ken 2018">
+    <meta name="keywords" content="Lee Ken 2018">
+    <meta name="author" content="Lee Ken 2018">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/logo.png">
+    <link rel="apple-touch-icon-precomposed" href="images/57.png" sizes="57x57">
+    <link rel="apple-touch-icon-precomposed" href="images/76.png" sizes="76x76">
+    <link rel="apple-touch-icon-precomposed" href="images/120.png" sizes="120x120">
+    <link rel="apple-touch-icon-precomposed" href="images/152.png" sizes="152x152">
+    <link rel="apple-touch-icon-precomposed" href="images/180.png" sizes="180x180">
+    <link rel="apple-touch-icon-precomposed" href="images/192.png" sizes="192x192">
+    <title>..:: ABC ::..</title>
+    <!-- Bootstrap core CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="css/all/bootstrap.css" rel="stylesheet">
+    <link href="css/all/normalize.css" rel="stylesheet">
+    <link href="css/all/animate.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="css/style-ll.css" rel="stylesheet">
+    <link href="css/iconmoon.css" rel="stylesheet">
+    <link href="css/rwd.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet">
+</head>
+<body>
+    <section class="out-wrapper">
+        <header class="out-header">
+            <div class="out-logo">
+                <div class="logo">
+                    <a class="lg" href="index.html" title="Lee Ken 2018"><img src="images/logo.png" alt="Lee Ken 2018"></a>
+                </div>
+            </div>
+            <a class="click-search-mb" title=""><i class="icon-moon icon-ico_search active"></i><i class="icon-moon icon-ico_close"></i></a>
+            <div class="out-search-top">
+                <input id="search-nav" class="input-search-top" placeholder="Search" type="text">
+                <span class="btn-search-top">
+                    <button type="button"><i class="icon-moon icon-ico_search"></i></button>
+                </span>
+            </div>
+            <div class="out-right">
+                <div class="wr-notifications">
+                    <a class="click-noti" href="javascript:void(0)"><i class="mdi mdi-bell-outline"></i><span class="noti-num">5</span></a>
+                    <div class="out-box-noti">
+                        <a class="close-click-noti" href="javascript:void(0)" title=""><i class="icon-moon icon-ico_close"></i></a>
+                        <ul>
+                            <li class="header">You have 10 notifications</li>
+                            <li>
+                                <ul>
+                                    <li> <a href="#"> <i class="mdi mdi-alert-circle-outline"></i> 5 new members joined today </a> </li>
+                                    <li> <a href="#"> <i class="mdi mdi-account-multiple-plus"></i> 5 new members joined today </a> </li>
+                                    <li> <a href="#"> <i class="mdi mdi-alert-outline"></i> 5 new members joined today </a> </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="#">View all</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="wr-user">
+                    <a class="click-user" href="javascript:void(0)">
+                        <i class="mdi mdi-account-circle"></i>
+                        <span class="user-name">
+                            Lee Ken
+                            <label>Administrator</label>
+                        </span>
+                    </a>
+                    <div class="out-box-user">
+                        <a class="close-click-user" href="javascript:void(0)" title="">
+                            <i class="icon-moon icon-ico_close"></i>
+                        </a>
+                        <ul>
+                            <li class="header"><i class="mdi mdi-clipboard-account"></i> My Profile</li>
+                            <li>
+                                <ul>
+                                    <li> <a href="#"> <i class="mdi mdi-wallet"></i> My Balance </a> </li>
+                                    <li> <a href="#"> <i class="mdi mdi-account-settings-variant"></i> User Setting </a> </li>
+                                </ul>
+                            </li>
+                            <li class="footer"><a href="login.html"><i class="mdi mdi-logout"></i> Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Left navbar-header -->
+        <div class="out-btn-click-nav-mobile"> <a href="javascript:void(0)" title=""><span></span></a> </div>
+        <div class="out-navbar">
+            <div class="wr-navbar">
+                <ul class="nav" id="side-menu">
+                    <li> <a href="javascript:void(0)"><i class="mdi mdi-palette"></i><span> Dashboard </span></a></li>
+                    <li>
+                        <a href="javascript:void(0)"><i class="mdi mdi-truck-fast"></i> <span> Express </span></a> <a class="click-show-sub-mb" href="javascript:void()"></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="@Url.Action("Index", "Airexps", null)"><i class="mdi mdi-airplane-landing"></i><span> Air Express</span></a></li>
+                            <li> <a href="#"><i class="mdi mdi-truck-trailer"></i><span> Fcl Express</span></a></li>
+                            <li> <a href="#"><i class="mdi mdi-castle"></i><span> Lcl Express</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><i class="mdi mdi-airplane"></i> <span>Air</span></a> <a class="click-show-sub-mb" href="javascript:void()"></a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="#"><i class="mdi mdi-sitemap"></i><span> Air Import</span></a></li>
+                            <li> <a href="#"><i class="mdi mdi-eye"></i><span> Fcl Import</span></a></li>
+                            <li> <a href="#"><i class="mdi mdi-settings"></i><span> Lcl Import</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="active"> <a href="javascript:void(0)"><i class="mdi mdi-grid"></i> <span> Consolidation</span></a> </li>
+                    <li> <a href="javascript:void(0)"><i class="mdi mdi-account-circle"></i> <span>Customers</span></a></li>
+                    <li> <a href="javascript:void(0)"><i class="mdi mdi-drone"></i> <span>Agents</span></a> </li>
+                    <li> <a href="javascript:void(0)"><i class="mdi mdi-home-map-marker"></i> <span>Carriers</span></a> </li>
+                    <li> <a href="/contacts"><i class="mdi mdi-voice"></i> <span>Sales</span></a></li>
+                    <li> <a href="javascript:void(0)"><i class="mdi mdi-account-star"></i> <span>Customs</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Left navbar-header end -->
+        <main class="out-main">
+            <section class="out-bar-top">
+                <i class="mdi mdi-truck-fast"></i>
+                <ul class="out-bar-line">
+                    <li><a href="#" title="">Express</a></li>
+                    <li><a href="#" title="">Air Express</a></li>
+                </ul>
+            </section>
+            <section class="wr-main">
+                <div class="out-content-mid no-mb no-minheight">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Item Code</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Item Name</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item1" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Item Group</label>
+                                    <select id="Assign" class="form-control select-style-1">
+                                        <option value="100031" selected="selected" style="font-weight: bold;">Please select value</option>
+                                        <option value="100029">Value 1</option>
+                                        <option value="100036">Value 2</option>
+                                        <option value="100034">Value 3</option>
+                                        <option value="100035">Value 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Model Group</label>
+                                    <select id="Assign" class="form-control select-style-1">
+                                        <option value="100031" selected="selected" style="font-weight: bold;">Please select value</option>
+                                        <option value="100029">Value 1</option>
+                                        <option value="100036">Value 2</option>
+                                        <option value="100034">Value 3</option>
+                                        <option value="100035">Value 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Area</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item1" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Unit</label>
+                                    <input class="form-control" placeholder="10/10/2017" disabled="disabled" type="text">
+                                    <div id="div-error-message-item1" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Cost Price Per Unit</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item1" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Component Line Type</label>
+                                    <select id="Assign" class="form-control select-style-1">
+                                        <option value="100031" selected="selected" style="font-weight: bold;">Please select value</option>
+                                        <option value="100029">Value 1</option>
+                                        <option value="100036">Value 2</option>
+                                        <option value="100034">Value 3</option>
+                                        <option value="100035">Value 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                <div class="out-input">
+                                    <div class="checkbox checkbox-primary">
+                                        <input id="checkbox1" type="checkbox">
+                                        <label for="checkbox1">Is Finished Goods</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                <div class="out-input">
+                                    <div class="animated-switch pull-center offon">
+                                        <input class="input-switch" id="switch-warning" name="switch-warning" checked="checked" type="checkbox">
+                                        <label for="switch-warning" class="label-warning"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                <div class="out-input">
+                                    <div class="animated-switch pull-center">
+                                        <input class="input-switch" id="switch-warning-2" name="switch-warning" checked="checked" type="checkbox">
+                                        <label for="switch-warning-2" class="label-warning"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                <div class="out-input">
+                                    <div class="animated-switch pull-center">
+                                        <input class="input-switch" id="switch-warning-2" name="switch-warning" checked="checked" type="checkbox">
+                                        <label for="switch-warning-2" class="label-warning"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                <div class="out-input">
+                                    <label>Date auto close</label>
+                                    <div class="out-datapick">
+                                        <input class="form-control" id="datepicker-autoclose" placeholder="mm/dd/yyyy" type="text">
+                                        <span class="input-group-addon"><i class="mdi mdi-calendar-clock"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                <div class="out-input">
+                                    <label>Date type</label>
+                                    <div class="out-datapick">
+                                        <input type="text" class="form-control mydatepicker" placeholder="mm/dd/yyyy">
+                                        <span class="input-group-addon"><i class="mdi mdi-calendar-clock"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                <div class="out-input">
+                                    <label>Date to Date</label>
+                                    <div class="input-daterange input-group" id="date-range">
+                                        <input type="text" class="form-control" name="start" />
+                                        <span class="input-text-to">to</span>
+                                        <input type="text" class="form-control" name="end" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-3 col-lg-3">
+                                <div class="out-input">
+                                    <label>Date table</label>
+                                    <center>
+                                        <div id="datepicker-inline"></div>
+                                    </center>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-2 col-lg-2">
+                                <select data-placeholder="Choose a Country..." class="chosen-select" tabindex="2">
+                                    <option value=""></option>
+                                    <option value="United States">United States</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Aland Islands">Aland Islands</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="American Samoa">American Samoa</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Anguilla">Anguilla</option>
+                                    <option value="Antarctica">Antarctica</option>
+                                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Aruba">Aruba</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Azerbaijan">Azerbaijan</option>
+                                    <option value="Bahamas">Bahamas</option>
+                                    <option value="Bahrain">Bahrain</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Barbados">Barbados</option>
+                                    <option value="Belarus">Belarus</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Belize">Belize</option>
+                                    <option value="Benin">Benin</option>
+                                    <option value="Bermuda">Bermuda</option>
+                                    <option value="Bhutan">Bhutan</option>
+                                    <option value="Bolivia, Plurinational State of">Bolivia, Plurinational State of</option>
+                                    <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                    <option value="Botswana">Botswana</option>
+                                    <option value="Bouvet Island">Bouvet Island</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                    <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                    <option value="Bulgaria">Bulgaria</option>
+                                    <option value="Burkina Faso">Burkina Faso</option>
+                                    <option value="Burundi">Burundi</option>
+                                    <option value="Cambodia">Cambodia</option>
+                                    <option value="Cameroon">Cameroon</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Cape Verde">Cape Verde</option>
+                                    <option value="Cayman Islands">Cayman Islands</option>
+                                    <option value="Central African Republic">Central African Republic</option>
+                                    <option value="Chad">Chad</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="China">China</option>
+                                    <option value="Christmas Island">Christmas Island</option>
+                                    <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Comoros">Comoros</option>
+                                    <option value="Congo">Congo</option>
+                                    <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The</option>
+                                    <option value="Cook Islands">Cook Islands</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="Cote D&apos;ivoire">Cote D'ivoire</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Curacao">Curacao</option>
+                                    <option value="Cyprus">Cyprus</option>
+                                    <option value="Czech Republic">Czech Republic</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Djibouti">Djibouti</option>
+                                    <option value="Dominica">Dominica</option>
+                                    <option value="Dominican Republic">Dominican Republic</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="El Salvador">El Salvador</option>
+                                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                    <option value="Eritrea">Eritrea</option>
+                                    <option value="Estonia">Estonia</option>
+                                    <option value="Ethiopia">Ethiopia</option>
+                                    <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                                    <option value="Faroe Islands">Faroe Islands</option>
+                                    <option value="Fiji">Fiji</option>
+                                    <option value="Finland">Finland</option>
+                                    <option value="France">France</option>
+                                    <option value="French Guiana">French Guiana</option>
+                                    <option value="French Polynesia">French Polynesia</option>
+                                    <option value="French Southern Territories">French Southern Territories</option>
+                                    <option value="Gabon">Gabon</option>
+                                    <option value="Gambia">Gambia</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Gibraltar">Gibraltar</option>
+                                    <option value="Greece">Greece</option>
+                                    <option value="Greenland">Greenland</option>
+                                    <option value="Grenada">Grenada</option>
+                                    <option value="Guadeloupe">Guadeloupe</option>
+                                    <option value="Guam">Guam</option>
+                                    <option value="Guatemala">Guatemala</option>
+                                    <option value="Guernsey">Guernsey</option>
+                                    <option value="Guinea">Guinea</option>
+                                    <option value="Guinea-bissau">Guinea-bissau</option>
+                                    <option value="Guyana">Guyana</option>
+                                    <option value="Haiti">Haiti</option>
+                                    <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                                    <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                                    <option value="Honduras">Honduras</option>
+                                    <option value="Hong Kong">Hong Kong</option>
+                                    <option value="Hungary">Hungary</option>
+                                    <option value="Iceland">Iceland</option>
+                                    <option value="India">India</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                                    <option value="Iraq">Iraq</option>
+                                    <option value="Ireland">Ireland</option>
+                                    <option value="Isle of Man">Isle of Man</option>
+                                    <option value="Israel">Israel</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Jamaica">Jamaica</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="Jersey">Jersey</option>
+                                    <option value="Jordan">Jordan</option>
+                                    <option value="Kazakhstan">Kazakhstan</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Kiribati">Kiribati</option>
+                                    <option value="Korea, Democratic People&apos;s Republic of">Korea, Democratic People's Republic of</option>
+                                    <option value="Korea, Republic of">Korea, Republic of</option>
+                                    <option value="Kuwait">Kuwait</option>
+                                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                    <option value="Lao People&apos;s Democratic Republic">Lao People's Democratic Republic</option>
+                                    <option value="Latvia">Latvia</option>
+                                    <option value="Lebanon">Lebanon</option>
+                                    <option value="Lesotho">Lesotho</option>
+                                    <option value="Liberia">Liberia</option>
+                                    <option value="Libya">Libya</option>
+                                    <option value="Liechtenstein">Liechtenstein</option>
+                                    <option value="Lithuania">Lithuania</option>
+                                    <option value="Luxembourg">Luxembourg</option>
+                                    <option value="Macao">Macao</option>
+                                    <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav Republic of</option>
+                                    <option value="Madagascar">Madagascar</option>
+                                    <option value="Malawi">Malawi</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Maldives">Maldives</option>
+                                    <option value="Mali">Mali</option>
+                                    <option value="Malta">Malta</option>
+                                    <option value="Marshall Islands">Marshall Islands</option>
+                                    <option value="Martinique">Martinique</option>
+                                    <option value="Mauritania">Mauritania</option>
+                                    <option value="Mauritius">Mauritius</option>
+                                    <option value="Mayotte">Mayotte</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                    <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                    <option value="Monaco">Monaco</option>
+                                    <option value="Mongolia">Mongolia</option>
+                                    <option value="Montenegro">Montenegro</option>
+                                    <option value="Montserrat">Montserrat</option>
+                                    <option value="Morocco">Morocco</option>
+                                    <option value="Mozambique">Mozambique</option>
+                                    <option value="Myanmar">Myanmar</option>
+                                    <option value="Namibia">Namibia</option>
+                                    <option value="Nauru">Nauru</option>
+                                    <option value="Nepal">Nepal</option>
+                                    <option value="Netherlands">Netherlands</option>
+                                    <option value="New Caledonia">New Caledonia</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                    <option value="Nicaragua">Nicaragua</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Niue">Niue</option>
+                                    <option value="Norfolk Island">Norfolk Island</option>
+                                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                    <option value="Norway">Norway</option>
+                                    <option value="Oman">Oman</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Palau">Palau</option>
+                                    <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                    <option value="Panama">Panama</option>
+                                    <option value="Papua New Guinea">Papua New Guinea</option>
+                                    <option value="Paraguay">Paraguay</option>
+                                    <option value="Peru">Peru</option>
+                                    <option value="Philippines">Philippines</option>
+                                    <option value="Pitcairn">Pitcairn</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="Reunion">Reunion</option>
+                                    <option value="Romania">Romania</option>
+                                    <option value="Russian Federation">Russian Federation</option>
+                                    <option value="Rwanda">Rwanda</option>
+                                    <option value="Saint Barthelemy">Saint Barthelemy</option>
+                                    <option value="Saint Helena, Ascension and Tristan da Cunha">Saint Helena, Ascension and Tristan da Cunha</option>
+                                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                    <option value="Saint Lucia">Saint Lucia</option>
+                                    <option value="Saint Martin (French part)">Saint Martin (French part)</option>
+                                    <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                    <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                                    <option value="Samoa">Samoa</option>
+                                    <option value="San Marino">San Marino</option>
+                                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Senegal">Senegal</option>
+                                    <option value="Serbia">Serbia</option>
+                                    <option value="Seychelles">Seychelles</option>
+                                    <option value="Sierra Leone">Sierra Leone</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Sint Maarten (Dutch part)">Sint Maarten (Dutch part)</option>
+                                    <option value="Slovakia">Slovakia</option>
+                                    <option value="Slovenia">Slovenia</option>
+                                    <option value="Solomon Islands">Solomon Islands</option>
+                                    <option value="Somalia">Somalia</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="South Georgia and The South Sandwich Islands">South Georgia and The South Sandwich Islands</option>
+                                    <option value="South Sudan">South Sudan</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="Sudan">Sudan</option>
+                                    <option value="Suriname">Suriname</option>
+                                    <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                    <option value="Swaziland">Swaziland</option>
+                                    <option value="Sweden">Sweden</option>
+                                    <option value="Switzerland">Switzerland</option>
+                                    <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                    <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                                    <option value="Tajikistan">Tajikistan</option>
+                                    <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Timor-leste">Timor-leste</option>
+                                    <option value="Togo">Togo</option>
+                                    <option value="Tokelau">Tokelau</option>
+                                    <option value="Tonga">Tonga</option>
+                                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                    <option value="Tunisia">Tunisia</option>
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="Turkmenistan">Turkmenistan</option>
+                                    <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                    <option value="Tuvalu">Tuvalu</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="United States">United States</option>
+                                    <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                    <option value="Uruguay">Uruguay</option>
+                                    <option value="Uzbekistan">Uzbekistan</option>
+                                    <option value="Vanuatu">Vanuatu</option>
+                                    <option value="Venezuela, Bolivarian Republic of">Venezuela, Bolivarian Republic of</option>
+                                    <option value="Viet Nam">Viet Nam</option>
+                                    <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                    <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                                    <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                    <option value="Western Sahara">Western Sahara</option>
+                                    <option value="Yemen">Yemen</option>
+                                    <option value="Zambia">Zambia</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <div class="out-input">
+                                    <label style="display: block">&nbsp;</label>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-border-color"></i>&nbsp;Edit</a>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-delete"></i>&nbsp;Delete</a>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-lock"></i>&nbsp;lock</a>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-lock-open"></i>&nbsp;lock open</a>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-refresh"></i>&nbsp;Refresh</a>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-update"></i>&nbsp;Update</a>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-printer"></i>&nbsp;Printer</a>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-floppy"></i>&nbsp;Save</a>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-close"></i>&nbsp;Close</a>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-keyboard-backspace"></i>&nbsp;BsacK</a>
+                                    <a href="#" class="btn pull-right"><i class="mdi mdi-plus-circle-outline"></i>&nbsp;Add</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="out-content-mid no-mb no-minheight">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="out-input">
+                                    <label>Item Code</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="out-input">
+                                    <label>Item Name</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item1" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="out-input">
+                                    <label>Item Group</label>
+                                    <select id="Assign" class="form-control select-style-1">
+                                        <option value="100031" selected="selected" style="font-weight: bold;">Please select value</option>
+                                        <option value="100029">Value 1</option>
+                                        <option value="100036">Value 2</option>
+                                        <option value="100034">Value 3</option>
+                                        <option value="100035">Value 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="out-input">
+                                    <label>Cost Price Per Unit</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item1" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-4">
+                                <div class="out-input">
+                                    <label>Cost Price Per Unit</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item1" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Item Group</label>
+                                    <select id="Assign" class="form-control select-style-1">
+                                        <option value="100031" selected="selected" style="font-weight: bold;">Please select value</option>
+                                        <option value="100029">Value 1</option>
+                                        <option value="100036">Value 2</option>
+                                        <option value="100034">Value 3</option>
+                                        <option value="100035">Value 4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Cost Price Per Unit</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item1" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Cost Price Per Unit</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item1" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <div class="out-input">
+                                    <label>Cost Price Per Unit</label>
+                                    <input type="text" class="form-control" placeholder="">
+                                    <div id="div-error-message-item1" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="out-content-mid-table">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <section class="col-sm-12 col-md-12 col-lg-12">
+                                <table id="example" class="display nowrap" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>First name</th>
+                                            <th>Last name</th>
+                                            <th>Position</th>
+                                            <th>Office</th>
+                                            <th>Age</th>
+                                            <th>Start date</th>
+                                            <th>Salary</th>
+                                            <th>Extn.</th>
+                                            <th>E-mail</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Tiger</td>
+                                            <td>Nixon</td>
+                                            <td>System Architect</td>
+                                            <td>Edinburgh</td>
+                                            <td>61</td>
+                                            <td>2011/04/25</td>
+                                            <td>$320,800</td>
+                                            <td>5421</td>
+                                            <td>t.nixon@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Garrett</td>
+                                            <td>Winters</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>63</td>
+                                            <td>2011/07/25</td>
+                                            <td>$170,750</td>
+                                            <td>8422</td>
+                                            <td>g.winters@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ashton</td>
+                                            <td>Cox</td>
+                                            <td>Junior Technical Author</td>
+                                            <td>San Francisco</td>
+                                            <td>66</td>
+                                            <td>2009/01/12</td>
+                                            <td>$86,000</td>
+                                            <td>1562</td>
+                                            <td>a.cox@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cedric</td>
+                                            <td>Kelly</td>
+                                            <td>Senior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2012/03/29</td>
+                                            <td>$433,060</td>
+                                            <td>6224</td>
+                                            <td>c.kelly@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Airi</td>
+                                            <td>Satou</td>
+                                            <td>Accountant</td>
+                                            <td>Tokyo</td>
+                                            <td>33</td>
+                                            <td>2008/11/28</td>
+                                            <td>$162,700</td>
+                                            <td>5407</td>
+                                            <td>a.satou@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brielle</td>
+                                            <td>Williamson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2012/12/02</td>
+                                            <td>$372,000</td>
+                                            <td>4804</td>
+                                            <td>b.williamson@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Herrod</td>
+                                            <td>Chandler</td>
+                                            <td>Sales Assistant</td>
+                                            <td>San Francisco</td>
+                                            <td>59</td>
+                                            <td>2012/08/06</td>
+                                            <td>$137,500</td>
+                                            <td>9608</td>
+                                            <td>h.chandler@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rhona</td>
+                                            <td>Davidson</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Tokyo</td>
+                                            <td>55</td>
+                                            <td>2010/10/14</td>
+                                            <td>$327,900</td>
+                                            <td>6200</td>
+                                            <td>r.davidson@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Colleen</td>
+                                            <td>Hurst</td>
+                                            <td>Javascript Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>39</td>
+                                            <td>2009/09/15</td>
+                                            <td>$205,500</td>
+                                            <td>2360</td>
+                                            <td>c.hurst@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sonya</td>
+                                            <td>Frost</td>
+                                            <td>Software Engineer</td>
+                                            <td>Edinburgh</td>
+                                            <td>23</td>
+                                            <td>2008/12/13</td>
+                                            <td>$103,600</td>
+                                            <td>1667</td>
+                                            <td>s.frost@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jena</td>
+                                            <td>Gaines</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td>30</td>
+                                            <td>2008/12/19</td>
+                                            <td>$90,560</td>
+                                            <td>3814</td>
+                                            <td>j.gaines@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Quinn</td>
+                                            <td>Flynn</td>
+                                            <td>Support Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>22</td>
+                                            <td>2013/03/03</td>
+                                            <td>$342,000</td>
+                                            <td>9497</td>
+                                            <td>q.flynn@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Charde</td>
+                                            <td>Marshall</td>
+                                            <td>Regional Director</td>
+                                            <td>San Francisco</td>
+                                            <td>36</td>
+                                            <td>2008/10/16</td>
+                                            <td>$470,600</td>
+                                            <td>6741</td>
+                                            <td>c.marshall@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Haley</td>
+                                            <td>Kennedy</td>
+                                            <td>Senior Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>43</td>
+                                            <td>2012/12/18</td>
+                                            <td>$313,500</td>
+                                            <td>3597</td>
+                                            <td>h.kennedy@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tatyana</td>
+                                            <td>Fitzpatrick</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>19</td>
+                                            <td>2010/03/17</td>
+                                            <td>$385,750</td>
+                                            <td>1965</td>
+                                            <td>t.fitzpatrick@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael</td>
+                                            <td>Silva</td>
+                                            <td>Marketing Designer</td>
+                                            <td>London</td>
+                                            <td>66</td>
+                                            <td>2012/11/27</td>
+                                            <td>$198,500</td>
+                                            <td>1581</td>
+                                            <td>m.silva@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Paul</td>
+                                            <td>Byrd</td>
+                                            <td>Chief Financial Officer (CFO)</td>
+                                            <td>New York</td>
+                                            <td>64</td>
+                                            <td>2010/06/09</td>
+                                            <td>$725,000</td>
+                                            <td>3059</td>
+                                            <td>p.byrd@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloria</td>
+                                            <td>Little</td>
+                                            <td>Systems Administrator</td>
+                                            <td>New York</td>
+                                            <td>59</td>
+                                            <td>2009/04/10</td>
+                                            <td>$237,500</td>
+                                            <td>1721</td>
+                                            <td>g.little@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bradley</td>
+                                            <td>Greer</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>41</td>
+                                            <td>2012/10/13</td>
+                                            <td>$132,000</td>
+                                            <td>2558</td>
+                                            <td>b.greer@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dai</td>
+                                            <td>Rios</td>
+                                            <td>Personnel Lead</td>
+                                            <td>Edinburgh</td>
+                                            <td>35</td>
+                                            <td>2012/09/26</td>
+                                            <td>$217,500</td>
+                                            <td>2290</td>
+                                            <td>d.rios@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jenette</td>
+                                            <td>Caldwell</td>
+                                            <td>Development Lead</td>
+                                            <td>New York</td>
+                                            <td>30</td>
+                                            <td>2011/09/03</td>
+                                            <td>$345,000</td>
+                                            <td>1937</td>
+                                            <td>j.caldwell@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Yuri</td>
+                                            <td>Berry</td>
+                                            <td>Chief Marketing Officer (CMO)</td>
+                                            <td>New York</td>
+                                            <td>40</td>
+                                            <td>2009/06/25</td>
+                                            <td>$675,000</td>
+                                            <td>6154</td>
+                                            <td>y.berry@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Caesar</td>
+                                            <td>Vance</td>
+                                            <td>Pre-Sales Support</td>
+                                            <td>New York</td>
+                                            <td>21</td>
+                                            <td>2011/12/12</td>
+                                            <td>$106,450</td>
+                                            <td>8330</td>
+                                            <td>c.vance@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Doris</td>
+                                            <td>Wilder</td>
+                                            <td>Sales Assistant</td>
+                                            <td>Sidney</td>
+                                            <td>23</td>
+                                            <td>2010/09/20</td>
+                                            <td>$85,600</td>
+                                            <td>3023</td>
+                                            <td>d.wilder@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Angelica</td>
+                                            <td>Ramos</td>
+                                            <td>Chief Executive Officer (CEO)</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2009/10/09</td>
+                                            <td>$1,200,000</td>
+                                            <td>5797</td>
+                                            <td>a.ramos@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gavin</td>
+                                            <td>Joyce</td>
+                                            <td>Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>42</td>
+                                            <td>2010/12/22</td>
+                                            <td>$92,575</td>
+                                            <td>8822</td>
+                                            <td>g.joyce@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer</td>
+                                            <td>Chang</td>
+                                            <td>Regional Director</td>
+                                            <td>Singapore</td>
+                                            <td>28</td>
+                                            <td>2010/11/14</td>
+                                            <td>$357,650</td>
+                                            <td>9239</td>
+                                            <td>j.chang@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brenden</td>
+                                            <td>Wagner</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>28</td>
+                                            <td>2011/06/07</td>
+                                            <td>$206,850</td>
+                                            <td>1314</td>
+                                            <td>b.wagner@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fiona</td>
+                                            <td>Green</td>
+                                            <td>Chief Operating Officer (COO)</td>
+                                            <td>San Francisco</td>
+                                            <td>48</td>
+                                            <td>2010/03/11</td>
+                                            <td>$850,000</td>
+                                            <td>2947</td>
+                                            <td>f.green@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shou</td>
+                                            <td>Itou</td>
+                                            <td>Regional Marketing</td>
+                                            <td>Tokyo</td>
+                                            <td>20</td>
+                                            <td>2011/08/14</td>
+                                            <td>$163,000</td>
+                                            <td>8899</td>
+                                            <td>s.itou@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michelle</td>
+                                            <td>House</td>
+                                            <td>Integration Specialist</td>
+                                            <td>Sidney</td>
+                                            <td>37</td>
+                                            <td>2011/06/02</td>
+                                            <td>$95,400</td>
+                                            <td>2769</td>
+                                            <td>m.house@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Suki</td>
+                                            <td>Burks</td>
+                                            <td>Developer</td>
+                                            <td>London</td>
+                                            <td>53</td>
+                                            <td>2009/10/22</td>
+                                            <td>$114,500</td>
+                                            <td>6832</td>
+                                            <td>s.burks@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Prescott</td>
+                                            <td>Bartlett</td>
+                                            <td>Technical Author</td>
+                                            <td>London</td>
+                                            <td>27</td>
+                                            <td>2011/05/07</td>
+                                            <td>$145,000</td>
+                                            <td>3606</td>
+                                            <td>p.bartlett@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gavin</td>
+                                            <td>Cortez</td>
+                                            <td>Team Leader</td>
+                                            <td>San Francisco</td>
+                                            <td>22</td>
+                                            <td>2008/10/26</td>
+                                            <td>$235,500</td>
+                                            <td>2860</td>
+                                            <td>g.cortez@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Martena</td>
+                                            <td>Mccray</td>
+                                            <td>Post-Sales support</td>
+                                            <td>Edinburgh</td>
+                                            <td>46</td>
+                                            <td>2011/03/09</td>
+                                            <td>$324,050</td>
+                                            <td>8240</td>
+                                            <td>m.mccray@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Unity</td>
+                                            <td>Butler</td>
+                                            <td>Marketing Designer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>2009/12/09</td>
+                                            <td>$85,675</td>
+                                            <td>5384</td>
+                                            <td>u.butler@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Howard</td>
+                                            <td>Hatfield</td>
+                                            <td>Office Manager</td>
+                                            <td>San Francisco</td>
+                                            <td>51</td>
+                                            <td>2008/12/16</td>
+                                            <td>$164,500</td>
+                                            <td>7031</td>
+                                            <td>h.hatfield@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hope</td>
+                                            <td>Fuentes</td>
+                                            <td>Secretary</td>
+                                            <td>San Francisco</td>
+                                            <td>41</td>
+                                            <td>2010/02/12</td>
+                                            <td>$109,850</td>
+                                            <td>6318</td>
+                                            <td>h.fuentes@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Vivian</td>
+                                            <td>Harrell</td>
+                                            <td>Financial Controller</td>
+                                            <td>San Francisco</td>
+                                            <td>62</td>
+                                            <td>2009/02/14</td>
+                                            <td>$452,500</td>
+                                            <td>9422</td>
+                                            <td>v.harrell@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Timothy</td>
+                                            <td>Mooney</td>
+                                            <td>Office Manager</td>
+                                            <td>London</td>
+                                            <td>37</td>
+                                            <td>2008/12/11</td>
+                                            <td>$136,200</td>
+                                            <td>7580</td>
+                                            <td>t.mooney@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jackson</td>
+                                            <td>Bradshaw</td>
+                                            <td>Director</td>
+                                            <td>New York</td>
+                                            <td>65</td>
+                                            <td>2008/09/26</td>
+                                            <td>$645,750</td>
+                                            <td>1042</td>
+                                            <td>j.bradshaw@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Olivia</td>
+                                            <td>Liang</td>
+                                            <td>Support Engineer</td>
+                                            <td>Singapore</td>
+                                            <td>64</td>
+                                            <td>2011/02/03</td>
+                                            <td>$234,500</td>
+                                            <td>2120</td>
+                                            <td>o.liang@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bruno</td>
+                                            <td>Nash</td>
+                                            <td>Software Engineer</td>
+                                            <td>London</td>
+                                            <td>38</td>
+                                            <td>2011/05/03</td>
+                                            <td>$163,500</td>
+                                            <td>6222</td>
+                                            <td>b.nash@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sakura</td>
+                                            <td>Yamamoto</td>
+                                            <td>Support Engineer</td>
+                                            <td>Tokyo</td>
+                                            <td>37</td>
+                                            <td>2009/08/19</td>
+                                            <td>$139,575</td>
+                                            <td>9383</td>
+                                            <td>s.yamamoto@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Thor</td>
+                                            <td>Walton</td>
+                                            <td>Developer</td>
+                                            <td>New York</td>
+                                            <td>61</td>
+                                            <td>2013/08/11</td>
+                                            <td>$98,540</td>
+                                            <td>8327</td>
+                                            <td>t.walton@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Finn</td>
+                                            <td>Camacho</td>
+                                            <td>Support Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>47</td>
+                                            <td>2009/07/07</td>
+                                            <td>$87,500</td>
+                                            <td>2927</td>
+                                            <td>f.camacho@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Serge</td>
+                                            <td>Baldwin</td>
+                                            <td>Data Coordinator</td>
+                                            <td>Singapore</td>
+                                            <td>64</td>
+                                            <td>2012/04/09</td>
+                                            <td>$138,575</td>
+                                            <td>8352</td>
+                                            <td>s.baldwin@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zenaida</td>
+                                            <td>Frank</td>
+                                            <td>Software Engineer</td>
+                                            <td>New York</td>
+                                            <td>63</td>
+                                            <td>2010/01/04</td>
+                                            <td>$125,250</td>
+                                            <td>7439</td>
+                                            <td>z.frank@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Zorita</td>
+                                            <td>Serrano</td>
+                                            <td>Software Engineer</td>
+                                            <td>San Francisco</td>
+                                            <td>56</td>
+                                            <td>2012/06/01</td>
+                                            <td>$115,000</td>
+                                            <td>4389</td>
+                                            <td>z.serrano@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jennifer</td>
+                                            <td>Acosta</td>
+                                            <td>Junior Javascript Developer</td>
+                                            <td>Edinburgh</td>
+                                            <td>43</td>
+                                            <td>2013/02/01</td>
+                                            <td>$75,650</td>
+                                            <td>3431</td>
+                                            <td>j.acosta@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cara</td>
+                                            <td>Stevens</td>
+                                            <td>Sales Assistant</td>
+                                            <td>New York</td>
+                                            <td>46</td>
+                                            <td>2011/12/06</td>
+                                            <td>$145,600</td>
+                                            <td>3990</td>
+                                            <td>c.stevens@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hermione</td>
+                                            <td>Butler</td>
+                                            <td>Regional Director</td>
+                                            <td>London</td>
+                                            <td>47</td>
+                                            <td>2011/03/21</td>
+                                            <td>$356,250</td>
+                                            <td>1016</td>
+                                            <td>h.butler@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lael</td>
+                                            <td>Greer</td>
+                                            <td>Systems Administrator</td>
+                                            <td>London</td>
+                                            <td>21</td>
+                                            <td>2009/02/27</td>
+                                            <td>$103,500</td>
+                                            <td>6733</td>
+                                            <td>l.greer@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jonas</td>
+                                            <td>Alexander</td>
+                                            <td>Developer</td>
+                                            <td>San Francisco</td>
+                                            <td>30</td>
+                                            <td>2010/07/14</td>
+                                            <td>$86,500</td>
+                                            <td>8196</td>
+                                            <td>j.alexander@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shad</td>
+                                            <td>Decker</td>
+                                            <td>Regional Director</td>
+                                            <td>Edinburgh</td>
+                                            <td>51</td>
+                                            <td>2008/11/13</td>
+                                            <td>$183,000</td>
+                                            <td>6373</td>
+                                            <td>s.decker@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Michael</td>
+                                            <td>Bruce</td>
+                                            <td>Javascript Developer</td>
+                                            <td>Singapore</td>
+                                            <td>29</td>
+                                            <td>2011/06/27</td>
+                                            <td>$183,000</td>
+                                            <td>5384</td>
+                                            <td>m.bruce@datatables.net</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Donna</td>
+                                            <td>Snider</td>
+                                            <td>Customer Support</td>
+                                            <td>New York</td>
+                                            <td>27</td>
+                                            <td>2011/01/25</td>
+                                            <td>$112,000</td>
+                                            <td>4226</td>
+                                            <td>d.snider@datatables.net</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!--<section class="out-login">
+            <div class="wr-login">
+                <div class="login-left-box wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="wr-logo">
+                        <a href="#" title="">
+                            <img src="images/logo.png" alt=""/>
+                        </a>
+                    </div>
+                    <div class="wr-txt">
+                        <h2>Welcome to DISO!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <a href="#" title="">Need Help?</a>
+                    </div>
+                </div>
+                <div class="login-right-box wow fadeIn" data-wow-delay="1s">
+                    <h2>Login</h2>
+                    <div class="out-avarta">
+                        <div class="wr-avarta"></div>
+                    </div>
+                    <div class="out-form form-login">
+                            <form>
+                                <div class="form-group">
+                                    <label>Email:</label>
+                                    <input type="email" id="inputEmail" class="form-control" required autofocus tabindex="1">
+                                    <span class="show-err">Incorrect Email or Password. Please try again.</span>
+                                </div>
+                                <div class="form-group">
+                                    <label>Password:</label>
+                                    <input type="password" id="password" name="password" class="form-control" data-toggle="password" tabindex="2">
+                                    <span class="show-err">Incorrect Email or Password. Please try again.</span>
+                                </div>
+                                <div class="form-group">
+                                    <a class="forgot" href="forgot.html" title="">Forgot your password?</a>
+                                    <button class="btn btn-primary float-right btn-login" tabindex="3">Login</button>
+                                </div>
+                            </form>
+                    </div>
+                    <div class="wr-footer">
+                        <p>© Copyright 2017 by Delfi Technologies A/S. All rights reserved. Cookie policy</p>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+    </section>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster
+    <script src="js/all/jquery-3.1.1.slim.min.js"></script>-->
+    <script src="js/all/jquery-2.0.3.js"></script>
+    <script src="js/all/tether.js"></script>
+    <script src="js/all/bootstrap.min.js"></script>
+    <script src="js/all/wow.js"></script>
+    <script src="js/all/device.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/all/ie10-viewport-bug-workaround.js"></script>
+    <!--<script src="js/bootstrap-show-password.min.js"></script>-->
+    <!-- JS data Table
+    <script src="js/dataTables/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables/dataTables.bootstrap.min.js"></script>
+    <script src="css/dataTables/responsive.bootstrap4.css"></script>  -->
+
+    <script type="text/javascript" src="js/dataTables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="js/dataTables/dataTables.fixedHeader.min.js"></script>
+    <script type="text/javascript" src="js/dataTables/dataTables.select.min.js"></script>
+
+    <!--Btn in table Copy PDF CSV ... -->
+    <script type="text/javascript" src="js/dataTables/btn/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" src="js/dataTables/btn/jszip.min.js"></script>
+    <script type="text/javascript" src="js/dataTables/btn/pdfmake.min.js"></script>
+    <script type="text/javascript" src="js/dataTables/btn/vfs_fonts.js"></script>
+    <script type="text/javascript" src="js/dataTables/btn/buttons.html5.min.js"></script>
+
+
+    <link href="css/dataTables/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="css/dataTables/responsive.dataTables.min.css" rel="stylesheet">
+    <!--<link href="css/dataTables/dataTables.bootstrap4.min.css" rel="stylesheet">
+    <link href="css/dataTables/responsive.bootstrap4.css" rel="stylesheet">-->
+
+    <link href="css/dataTables/fixedHeader.dataTables.min.css" rel="stylesheet">
+    <link href="css/dataTables/btn/buttons.dataTables.min.css" rel="stylesheet">
+    <link href="css/dataTables/custom-table.css" rel="stylesheet">
+
+    <!--plugins-->
+    <link href="plugins/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+    <script src="plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+
+    <link href="plugins/chosen/chosen.css" rel="stylesheet" type="text/css" />
+    <script src="plugins/chosen/chosen.jquery.js"></script>
+
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100,
+                callback: function (box) {
+                    //console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+            }
+        );
+        wow.init();
+        // Show hiden pass click
+        //$("#password").password('toggle');
+        // Date Picker
+        jQuery('.mydatepicker, #datepicker').datepicker({
+            autoclose: true,
+            todayHighlight: false
+        });
+
+        jQuery('#datepicker-autoclose').datepicker({
+            autoclose: true,
+            todayHighlight: false
+        });
+
+        jQuery('#date-range').datepicker({
+            toggleActive: true
+        });
+        jQuery('#datepicker-inline').datepicker({
+
+            todayHighlight: false
+        });
+
+        // plugins chosen //////////
+        var config = {
+            '.chosen-select': {},
+            '.chosen-select-deselect': { allow_single_deselect: true },
+            '.chosen-select-no-single': { disable_search_threshold: 10 },
+            '.chosen-select-no-results': { no_results_text: 'Oops, nothing found!' },
+            '.chosen-select-rtl': { rtl: true },
+            '.chosen-select-width': { width: '95%' }
+        }
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+﻿@model Logistics.Models.ContactForCreationDto
+<body>
+    <section class="wr-main">
+        <div class="out-content-mid no-mb no-minheight">
+            <div class="container-fluid">
+                    <div class="row" id="form_new">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>Contact ID</label>
+                                @Html.EditorFor(model => model.contactID, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<input type="text" value=@Model.JobID class="form-control" placeholder="">*@
+                                <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>First Name</label>
+                                @Html.EditorFor(model => model.firstName, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<input type="text" value=@Model.JobID class="form-control" placeholder="">*@
+                                <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>Last Name</label>
+                                @Html.EditorFor(model => model.lastName, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<input type="text" value=@Model.JobID class="form-control" placeholder="">*@
+                                <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>English Name</label>
+                                @Html.EditorFor(model => model.englishName, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<input type="text" value=@Model.JobID class="form-control" placeholder="">*@
+                                <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>Position</label>
+                                <select id="Position" name="@Html.NameFor(model => model.positionID)" class="form-control select-style-1">
+                                    <option value="" disabled selected="selected" style="font-weight: bold;">Please select position</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>Home Address</label>
+                                @Html.EditorFor(model => model.homeAddress, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<input type="text" value=@Model.JobID class="form-control" placeholder="">*@
+                                <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>Cell Phone</label>
+                                @Html.EditorFor(model => model.cellPhone, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<input type="text" value=@Model.JobID class="form-control" placeholder="">*@
+                                <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>Home Phone</label>
+                                @Html.EditorFor(model => model.homePhone, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<input type="text" value=@Model.JobID class="form-control" placeholder="">*@
+                                <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>Email Address</label>
+                                @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<input type="text" value=@Model.JobID class="form-control" placeholder="">*@
+                                <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>Company Ext</label>
+                                @Html.EditorFor(model => model.company_ext, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<input type="text" value=@Model.JobID class="form-control" placeholder="">*@
+                                <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>signature</label>
+                                @Html.EditorFor(model => model.signature, new { htmlAttributes = new { @class = "form-control" } })
+                                @*<input type="text" value=@Model.JobID class="form-control" placeholder="">*@
+                                <div id="div-error-message-item" class="color-danger p-t-10" style="display: none;">Please input data</div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <div class="out-input">
+                                <label>Department</label>
+                                <select id="Department" name="@Html.NameFor(model => model.departmentID)" class="form-control select-style-1">
+                                    <option value="" disabled selected="selected" style="font-weight: bold;">Please select department</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </section>
+</body>
